@@ -21,6 +21,8 @@ app.get('/ping', (req, res) => {
 // Initial route to login page
 app.get('/', (req, res) => {
     res.render('login', {
+        pageTitle: 'Passport',
+        pageDesc: 'Login',
         name: 'Hello World!'
     })
 })
